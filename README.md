@@ -3,6 +3,11 @@
 <p align="center"><b>Apapun pengeluarannya pakai Zwallet in aja!</b></p>
 <p align="center"><b>#zwalletaja</b></p>
 
+## SOAL TEORI
+<p>DOM               : Merupakan singkatan dari Document Object Model. bbjek dari dokumen dom menampilkan sekumpulan atribut/data yang bisa  dimanfaatkan dalam membuat program Javascript.</p>
+<p>REACT             : Library Javascript terpopuler untuk membuat user interface (UI). </p>
+<p>REACT VIRTUAL DOM : Setiap bagian dari UI adalah component, dan setiap component mempunyai state. dan React mengamati setiap perubahan pada state. ketika state pada sebuah component berubah, react mengupadate virtual DOM</p>
+
 ### # TENTANG
 
 Halo, Saya <b>Diki Herliansyah</b>, saya murid dari <b>Arkademy</b> program <b>Fullstack Mobile Batch 18</b><br>
