@@ -7,6 +7,8 @@
 <p>DOM               : Merupakan singkatan dari Document Object Model. bbjek dari dokumen dom menampilkan sekumpulan atribut/data yang bisa  dimanfaatkan dalam membuat program Javascript.</p>
 <p>REACT             : Library Javascript terpopuler untuk membuat user interface (UI). </p>
 <p>REACT VIRTUAL DOM : Setiap bagian dari UI adalah component, dan setiap component mempunyai state. dan React mengamati setiap perubahan pada state. ketika state pada sebuah component berubah, react mengupadate virtual DOM</p>
+<p>Functional Class  : Tidak bisa menggunakan component state (hanya menerima props) </p>
+<p>Component Class   : Dapat menggunakan state<p/>
 
 ### # TENTANG
 
