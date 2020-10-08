@@ -1,3 +1,21 @@
+<h1 align="center">Zwallet API</h1>
+
+<p align="center"><b>Apapun pengeluarannya pakai Zwallet in aja!</b></p>
+<p align="center"><b>#zwalletaja</b></p>
+
+## SOAL TEORI
+<p>DOM               : Merupakan singkatan dari Document Object Model. objek dari dokumen dom menampilkan sekumpulan atribut/data yang bisa  dimanfaatkan dalam membuat program Javascript.</p>
+<p>REACT             : Library Javascript terpopuler untuk membuat user interface (UI). </p>
+<p>REACT VIRTUAL DOM : Bagian dari UI component, dan setiap component mempunyai state. dan React melihat setiap perubahan pada state. ketika state pada sebuah component berubah, react mengupadate virtual DOM</p>
+<p>Functional Class  : Tidak bisa menggunakan component state (hanya menerima props) </p>
+<p>Component Class   : Dapat menggunakan state<p/>
+
+### # TENTANG
+
+Halo, Saya <b>Diki Herliansyah</b>, saya murid dari <b>Arkademy</b> program <b>Fullstack Mobile Batch 18</b><br>
+Pada minggu ke lima ini saya membuat frontend web menggunakan <b>reactjs</b> dan dibantu dengan konsumsi <b>API</b> untuk menampilkan data dari database.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
