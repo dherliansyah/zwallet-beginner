@@ -1,4 +1,4 @@
-<h1>ZWALLET</h1>
+<h1 align="center">Zwallet API</h1>
 
 <p align="center"><b>Apapun pengeluarannya pakai Zwallet in aja!</b></p>
 <p align="center"><b>#zwalletaja</b></p>
