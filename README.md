@@ -6,7 +6,7 @@
 ### # TENTANG
 
 Halo, Saya <b>Diki Herliansyah</b>, saya murid dari <b>Arkademy</b> program <b>Fullstack Mobile Batch 18</b><br>
-Pada minggu ke empat ini saya membuat API dengan framework <b>expressJS</b> dan menggunakan tools <b>postman</b> untuk untuk uji coba <b>rest API</b>
+Pada minggu ke lima ini saya membuat frontend web menggunakan <b>reactjs</b> dan dibantu dengan konsumsi <b>API</b> untuk menampilkan data dari database.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
