@@ -19,9 +19,7 @@ const Header = (props) => {
               <p className="parap-header">Robert Chandler</p>
               <p className="parap-header">+62 8139 3877 7946</p>
             </Navbar.Text>
-
             <Image src={bell} rounded />
-
           </Navbar.Collapse>
         </Container>
       </Navbar>
