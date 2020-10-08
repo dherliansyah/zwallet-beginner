@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import { Container, Row, Col, NavLink, Card } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Container, Row, Col, NavLink } from "react-bootstrap";
+import {  Switch, Route, Link } from "react-router-dom";
 import grid from "./asset/grid.svg";
 import arrowUp from "./asset/arrow-up.svg";
 import plus from "./asset/plus.svg";

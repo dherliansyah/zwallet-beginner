@@ -2,9 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Historystyle.css";
 import john from "./asset/john.png";
-import audesk from "./asset/audesk.png";
-import logo from "./asset/logo.png";
-import name from "./asset/name.png";
 import Axios from "axios";
 
 const History = (props) => {

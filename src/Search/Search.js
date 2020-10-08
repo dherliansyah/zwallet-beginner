@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Searchstyle.css";
-import paul from "./asset/paul.png";
 import john from "./asset/john.png";
-import jessica from "./asset/jessica.png";
-import michael from "./asset/michael.png";
 import Axios from "axios";
 
 const Search = (props) => {
