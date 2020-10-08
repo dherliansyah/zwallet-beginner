@@ -1,0 +1,106 @@
+.s-search{
+    margin-top: 20px;
+}
+
+.s-parap-search{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+}
+
+.h-tran-data-search{
+    height:80px;
+    margin-top:10px;
+    background: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.h-img-data-search{
+    width:56px;
+    height:56px;
+    float:left; 
+    margin:10px !important;
+}
+
+.h-name-data-search{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4D4B57;
+}
+
+.h-status-data-search{
+    font-size: 14px;
+    line-height: 19px;
+    color: #7A7886;
+}
+
+.type-parap{
+    margin-top: 20px;
+    margin-bottom: unset !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #7A7886;
+}
+
+.type-parap-one{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #7A7886; 
+}
+
+.amount-input{
+    border: unset !important;
+    /* width: 400px; */
+    float: unset !important;
+    margin: auto !important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 56px;
+    text-align: center;
+    color:#6379F4 !important;
+}
+
+.amount-available{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3A3D42;
+    text-align: center;
+}
+
+.amount-notes{
+    text-align: center;
+    border: unset !important;
+    float: unset !important;
+    margin: auto !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(169, 169, 169, 0.8);
+}
+
+
+.h-tran-data-confirm:hover{
+    color:#fff;
+    background: linear-gradient(90deg,#5774aa,#6379F4);
+    border-color:unset !important;
+}
+
+.h-tran-data-confirm{
+    width:200px !important;
+    float:right !important;
+    margin-top:10px;
+    background-color:#6379F4 !important; 
+    border-color:unset !important;
+    margin-bottom: 30px;
+}
