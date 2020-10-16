@@ -8,7 +8,7 @@ const Profile = (props) => {
 
           <Row>
             <Col lg={12} md={12} sm={12} xs={12}>
-                <h1>Diki</h1>
+                <h1 className="aa">Diki</h1>
             </Col>
           </Row>
       </>
