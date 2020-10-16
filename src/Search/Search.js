@@ -17,11 +17,13 @@ const Search = (props) => {
   }, []);
   return (
     <>
-      <Container>
+      <div className="bg-white border-box bg-root">
         <Row>
+          
           <div className="s-search">
             <p className="s-parap-search">Search Receiver</p>
           </div>
+
         </Row>
         <Form>
           <Form.Group controlId="formBasicEmail">
@@ -34,22 +36,22 @@ const Search = (props) => {
         </Form>
         {user && user.map((item) => {
             return (
-              <div class="h-tran-data-search">
+              <div className="h-tran-data-search">
                 <img
-                  class="h-img-data-search img-fluid"
+                  className="h-img-data-search img-fluid"
                   alt="profile img"
                   src={john}
                 />
-                <Link class="h-name-data-href" to="/amount">
-                  <p class="h-name-data-search">
+                <Link className="h-name-data-href" to="/amount">
+                  <p className="h-name-data-search">
                     {item.firstName} {item.lastName}{" "}
                   </p>
                 </Link>
-                <p class="h-status-data-search">{`+62 ${item.phone}`}</p>
+                <p className="h-status-data-search">{`+62 ${item.phone}`}</p>
               </div>
             );
           })}
-      </Container>
+                    </div>
     </>
   );
 };

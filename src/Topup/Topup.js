@@ -16,7 +16,7 @@ const Topup = (props) => {
 
   return (
     <>
-      <Container>
+<div className="bg-white border-box bg-root">
         <Row>
           <div className="s-search">
             <p className="s-parap-search">How To Top Up</p>
@@ -32,7 +32,7 @@ const Topup = (props) => {
                 </ListGroup>
           );
         })}
-      </Container>
+        </div>
     </>
   );
 };

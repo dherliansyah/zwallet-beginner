@@ -20,8 +20,7 @@ const Navbar = (props) => {
     <>
       <Container>
         <Row>
-          <Col lg={3} md={12} xs={12}>
-            <div className="bg-white border-box">
+          <Col lg={3} md={12} xs={12} className={`bg-white border-box`} > 
               <div className="h-dashboard-in">
                 <NavLink>
                   <img
@@ -82,10 +81,9 @@ const Navbar = (props) => {
                   </Link>
                 </NavLink>
               </div>
-            </div>
           </Col>
           <Col lg={9} md={12} xs={12}>
-            <div className="bg-white side-right">
+            <div className={`side-right`}>
               <Switch>
                 <Route
                   path="/search"

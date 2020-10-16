@@ -41,7 +41,7 @@ const Home = (props) => {
       </Container>
       <Container>
         <Row>
-          <Col lg={7} md={7} sm={12} xs={12}>
+          <Col lg={7} md={7} sm={12} xs={12} className="pl-0">
             <div className="his-middle-one">
             <div className="income">
                 <img src={arrow} alt="icon" />
@@ -57,7 +57,7 @@ const Home = (props) => {
             </div>
           </Col>
 
-          <Col lg={5} md={5} sm={12} xs={12}>
+          <Col lg={5} md={5} sm={12} xs={12} className="pl-0 pr-0">
             <div className="his-middle-two">
               <p className="transaction-his">Transaction History</p>
               <Link className="see-all" to="/history">
