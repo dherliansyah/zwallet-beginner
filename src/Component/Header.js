@@ -9,7 +9,7 @@ const Header = (props) => {
     <>
       <Navbar className="background-header">
         <Container>
-          <Navbar.Brand className="header-logo" href="#home">
+          <Navbar.Brand className="header-logo">
             Zwallet
           </Navbar.Brand>
           <Navbar.Toggle />
