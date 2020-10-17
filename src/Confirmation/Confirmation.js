@@ -1,9 +1,13 @@
 import React from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Modal } from "react-bootstrap";
 import "./Confirmationstyle.css";
 import john from "./asset/john.png";
 
 const Confirmation = (props) => {
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div className="bg-white border-box bg-root">
@@ -40,6 +44,7 @@ const Confirmation = (props) => {
               <Button
                 className="btn btn-primary h-tran-data-confirm"
                 variant="primary"
+                onClick={handleShow}
               >
                 Continue
               </Button>
@@ -47,6 +52,20 @@ const Confirmation = (props) => {
           </Col>
         </Row>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 };
