@@ -1,0 +1,50 @@
+.text-p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a3d42;
+  padding-top: 20px;
+}
+
+.isi-p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7a7886;
+  margin-bottom: -5px !important;
+}
+
+.des-topup-top {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.des-topup {
+  border: none !important;
+  color: none !important;
+  font-size: 16px;
+  line-height: 27px;
+  align-items: center;
+  color: #7a7886;
+}
+
+.data-personal-top {
+  font-size: 12px;
+  line-height: 10px;
+  color: #7a7886;
+}
+
+.data-personal {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 10px;
+  color: #514f5b;
+}
+
+.text-manage {
+  text-decoration: none !important;
+  float: right;
+  margin-top: -50px;
+}

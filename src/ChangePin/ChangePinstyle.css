@@ -1,0 +1,152 @@
+.top-change{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3A3D42;
+    padding-top:20px;
+}
+
+.isi-change{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7886;
+    margin-bottom:-5px !important;
+}
+
+.float-change{
+    margin-left: 160px;
+}
+
+.input-change{
+    border: 1px solid rgba(169, 169, 169, 0.6);
+    box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+    border-radius: 10px;
+    width:53px;
+    height:65px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #3A3D42;
+    padding-left: 16px;
+    float:left;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+}
+
+.button-pin{
+    background: #DADADA;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    width:400px;
+    border: unset !important;
+    margin:auto;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.button-pin:hover{
+    background: linear-gradient(90deg,#5774aa,#6379F4);
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+
+    .float-change{
+        margin-left: 90px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+    .float-change{
+        margin-left: 95px;
+    }
+
+}
+
+@media screen and (min-width: 525px) and (max-width: 767px) {
+
+    .float-change{
+        margin-left: 0px;
+    }
+
+}
+
+@media screen and (min-width: 280px) and (max-width: 400px) {
+
+    .float-change{
+        margin-left: 0px !important;
+    }
+    .input-change{
+        border: 1px solid rgba(169, 169, 169, 0.6);
+        box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+        border-radius: 10px;
+        width:53px;
+        height:65px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        color: #3A3D42;
+        padding-left: 16px;
+        float:left;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 35px;
+    }
+    
+    .button-pin{
+        background: #DADADA;
+        box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+        border-radius: 12px;
+        width:300px;
+        border: unset !important;
+        margin:auto;
+        display: block;
+    }
+    
+    .button-pin:hover{
+        background: linear-gradient(90deg,#5774aa,#6379F4);
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 524px) {
+
+    .float-change{
+        margin-left: 15px !important;
+    }
+    
+
+    .input-change{
+        border: 1px solid rgba(169, 169, 169, 0.6);
+        box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+        border-radius: 10px;
+        width:53px;
+        height:65px;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        color: #3A3D42;
+        padding-left: 16px;
+        float:left;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 35px;
+    }
+    
+    .button-pin{
+        background: #DADADA;
+        box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+        border-radius: 12px;
+        width:300px;
+        border: unset !important;
+        margin:auto;
+        display: block;
+    }
+    
+    .button-pin:hover{
+        background: linear-gradient(90deg,#5774aa,#6379F4);
+    }
+
+}

@@ -19,11 +19,9 @@ const Search = (props) => {
     <>
       <div className="bg-white border-box bg-root">
         <Row>
-          
           <div className="s-search">
             <p className="s-parap-search">Search Receiver</p>
           </div>
-
         </Row>
         <Form>
           <Form.Group controlId="formBasicEmail">
@@ -34,7 +32,8 @@ const Search = (props) => {
             />
           </Form.Group>
         </Form>
-        {user && user.map((item) => {
+        {user &&
+          user.map((item) => {
             return (
               <div className="h-tran-data-search">
                 <img
@@ -51,7 +50,7 @@ const Search = (props) => {
               </div>
             );
           })}
-                    </div>
+      </div>
     </>
   );
 };

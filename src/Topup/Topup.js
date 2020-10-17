@@ -5,34 +5,35 @@ import Axios from "axios";
 
 const Topup = (props) => {
   const [topup, setTopup] = React.useState("");
-  React.useEffect(()=>{
+  React.useEffect(() => {
     Axios({
-      method : 'get',
-      url : 'https://zwallet-apii.herokuapp.com/topup',
+      method: "get",
+      url: "https://zwallet-apii.herokuapp.com/topup",
     })
-      .then((res)=> setTopup(res.data.data))
-      .catch((err)=> console.log(err.message))
-  },[]);
+      .then((res) => setTopup(res.data.data))
+      .catch((err) => console.log(err.message));
+  }, []);
 
   return (
     <>
-<div className="bg-white border-box bg-root">
+      <div className="bg-white border-box bg-root">
         <Row>
           <div className="s-search">
             <p className="s-parap-search">How To Top Up</p>
           </div>
         </Row>
-        {topup && topup.map((item, index)=>{
-          return(
-                  <ListGroup className="des-topup-top">
-                  <ListGroup.Item className="des-topup">
-                    <span className="num-topup"> {index+1}
-                    </span>{item.description}
-                  </ListGroup.Item>
-                </ListGroup>
-          );
-        })}
-        </div>
+        {topup &&
+          topup.map((item, index) => {
+            return (
+              <ListGroup className="des-topup-top">
+                <ListGroup.Item className="des-topup">
+                  <span className="num-topup"> {index + 1}</span>
+                  {item.description}
+                </ListGroup.Item>
+              </ListGroup>
+            );
+          })}
+      </div>
     </>
   );
 };

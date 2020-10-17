@@ -1,3 +1,83 @@
-.aa{
-    color : red;
+.bg-root {
+  padding-bottom: 30px;
+}
+
+.img-profil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.img-text {
+  text-align: center;
+  text-decoration: unset !important;
+  color: #7a7886;
+}
+
+.img-text:hover {
+  color: #6379f4;
+  font-weight: bold;
+}
+
+.name-p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+  color: #4d4b57;
+}
+
+.phone-p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #7a7886;
+}
+
+.personal-info,
+.password-info,
+.pin-info,
+.logout-info {
+  background: #e5e8ed;
+  border-radius: 10px;
+  width: 400px;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.text-personal {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4d4b57;
+  padding: 10px 0px 0px 20px;
+}
+
+.text-personal:hover {
+  color: #6379f4;
+}
+
+.text-link {
+  text-decoration: unset !important;
+}
+
+@media screen and (min-width: 280px) and (max-width: 959px) {
+  .personal-info {
+    width: 200px;
+  }
+
+  .password-info {
+    width: 200px;
+  }
+
+  .pin-info {
+    width: 200px;
+  }
+
+  .logout-info {
+    width: 200px;
+  }
 }

@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import "./Confirmationstyle.css";
 import john from "./asset/john.png";
 
 const Confirmation = (props) => {
   return (
     <>
-      <Container>
+      <div className="bg-white border-box bg-root">
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
             <div className="s-search">
@@ -46,7 +46,7 @@ const Confirmation = (props) => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </>
   );
 };

@@ -96,20 +96,6 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.side-right{
-    margin-top: 21px;
-    margin-bottom: 20px;
-    border-radius:25px;
-}
-
-@media screen and (min-width: 280px) and (max-width: 959px){
-    .side-right{
-        margin-top: 15px;
-        margin-bottom: 20px;
-        border-radius:25px;
-    } 
-}
-
 .h-dashboard-last{
     margin-top: 55px;
 }
