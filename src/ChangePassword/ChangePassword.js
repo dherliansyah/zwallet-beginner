@@ -20,7 +20,7 @@ const ChangePassword = (props) => {
                 className="top-form-change"
               >
                 <Form.Control
-                  type="password"
+                  type="text"
                   placeholder="Current password"
                   className="form-change"
                 />
@@ -31,7 +31,7 @@ const ChangePassword = (props) => {
                 className="top-form-change"
               >
                 <Form.Control
-                  type="password"
+                  type="text"
                   placeholder="New password"
                   className="form-change"
                 />
@@ -41,7 +41,7 @@ const ChangePassword = (props) => {
                 className="top-form-change"
               >
                 <Form.Control
-                  type="password"
+                  type="text"
                   placeholder="Repeat new password"
                   className="form-change"
                 />

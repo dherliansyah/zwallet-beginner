@@ -21,7 +21,7 @@ const ManagePhone = (props) => {
               <Form.Group controlId="formBasicEmail" className="top-form-phone">
                 <span>+62</span>
                 <Form.Control
-                  type="password"
+                  type="text"
                   placeholder="Enter your phone number"
                   className="form-phone"
                 />

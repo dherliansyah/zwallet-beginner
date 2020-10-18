@@ -10,7 +10,7 @@ const Search = (props) => {
   React.useEffect(() => {
     Axios({
       method: "get",
-      url: "https://zwallet-apii.herokuapp.com/profile",
+      url: "http://localhost:8000/api/v1/user?page=1&limit=4",
     })
       .then((res) => setUser(res.data.data))
       .catch((err) => console.log(err.message));

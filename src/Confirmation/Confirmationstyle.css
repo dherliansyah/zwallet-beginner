@@ -88,3 +88,39 @@
     background: linear-gradient(90deg,#5774aa,#6379F4);
     border-color:unset !important;
 }
+
+.input-confirmation{
+    
+        border: 1px solid rgba(169, 169, 169, 0.6);
+        box-shadow: 0px 10px 75px rgba(147, 147, 147, 0.1);
+        border-radius: 10px;
+        width:53px;
+        height:65px;
+        font-weight: bold;
+        font-size: 30px;
+        color: #3A3D42;
+        padding-left: 16px;
+        display:inline;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+}
+
+.float-confirmation{
+    margin-left: 20px;
+}
+
+.button-confirmation{
+    background: #DADADA;
+    box-shadow: 0px 6px 75px rgba(100, 87, 87, 0.05);
+    border-radius: 12px;
+    width:300px;
+    border: unset !important;
+    margin:auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.button-confirmation:hover{
+    background: linear-gradient(90deg,#5774aa,#6379F4);
+}

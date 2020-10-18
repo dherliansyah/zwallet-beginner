@@ -18,6 +18,7 @@ import { PersonalInfo } from "../PersonalInfo";
 import { ChangePassword } from "../ChangePassword";
 import { ChangePin } from "../ChangePin";
 import { ManagePhone } from "../ManagePhone";
+import { Success } from "../Success";
 
 const Navbar = (props) => {
   return (
@@ -32,7 +33,7 @@ const Navbar = (props) => {
                   src={grid}
                   alt="icon"
                 />
-                <Link className="h-dashboard" to="/home">
+                <Link className="h-dashboard" to="/">
                   Dashboard
                 </Link>
               </NavLink>
@@ -125,7 +126,12 @@ const Navbar = (props) => {
                 render={(props) => <ManagePhone {...props} />}
               />
 
-              <Route path="/home" render={(props) => <Home {...props} />} />
+              <Route
+                path="/success"
+                render={(props) => <Success {...props} />}
+              />
+
+              <Route path="/" render={(props) => <Home {...props} />} />
             </Switch>
           </Col>
         </Row>
