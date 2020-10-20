@@ -7,7 +7,9 @@ import arrowUp from "./asset/arrow-up.svg";
 import plus from "./asset/plus.svg";
 import user from "./asset/user.svg";
 import logOut from "./asset/log-out.svg";
-import { logout } from "../Utils";
+// import { logout } from "../Utils";
+import { AuthLogout } from "../redux/actions/Auth";
+import { useDispatch } from "react-redux";
 
 const Nav = (props) => {
   return (
@@ -58,7 +60,7 @@ const Nav = (props) => {
             />
             <Link
               className="h-dashboard"
-              to="/login"
+              
               onClick={() => props.onLogout()}
             >
               Logout
@@ -73,9 +75,10 @@ const Nav = (props) => {
 const Navbar = (props) => {
   let location = useLocation();
   let history = useHistory();
+  const dispatch = useDispatch() 
 
   const onLogout = () => {
-    logout();
+    dispatch(AuthLogout())
     history.replace("/login");
   };
   return <Nav location={location} onLogout={onLogout} />;

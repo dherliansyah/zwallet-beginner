@@ -1,0 +1,142 @@
+.l-back{
+    background-color:#6379F4;
+}
+
+.l-parap{
+    font-family: nunito-sans;
+    font-size: 30px;
+    color:#fff;
+    padding:20px 0px 0px 80px;
+}
+
+.email-data{
+    border: unset !important;
+    float: unset !important;
+    margin: auto !important;
+    font-family: Nunito Sans;
+    color: #B5BDCC;
+    border-bottom: 1px solid !important;
+}
+
+.password-data{
+    border: unset !important;
+    float: unset !important;
+    margin: auto !important;
+    font-family: Nunito Sans;
+    color: #B5BDCC;
+    border-bottom: 1px solid !important;
+}
+
+.l-covering{
+    font-family: nunito-sans;
+    color:#fff;
+    font-size: 2vw;
+    font-style: bold;
+    margin-bottom:18px;
+    padding:0px 0px 0px 80px;
+}
+
+.l-cut{
+    font-family: nunito Sans;
+    color:#fff;
+    padding:0px 0px 0px 80px;
+}
+
+.l-img{
+    width:55%;
+    float: unset;
+    margin: auto;
+    display: block;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1050px){
+	.l-img {
+		width:100%
+    }
+    
+    .l-cut{
+        font-family: nunito Sans;
+        color:#fff;
+        padding:0px 0px 0px 0px;
+    }
+
+    .l-parap{
+        font-family: nunito-sans;
+        font-size: 50px;
+        color:#fff;
+        padding:20px 0px 0px 0px;
+        text-align: center;
+    }
+    
+    .l-covering{
+        font-family: nunito-sans;
+        color:#fff;
+        font-size: 25px;
+        font-style: bold;
+        padding:0px 0px 0px 0px;
+    }
+
+    /* .l-head{
+        margin-top: 20px !important;
+    } */
+}
+
+.l-right{
+    /* width:384px; */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: nunito-sans;
+    line-height:33px;
+    color:#3a3d42;
+}
+
+.l-right-1{
+    height: 90px;
+    /* width: 433px; */
+    /* border-radius: nullpx; */
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(58, 61, 66, 0.6);
+
+}
+
+.l-head{
+    margin-top: 121px;
+}
+
+@media screen and (min-width: 260px) and (max-width: 768px){
+    .l-head{
+        margin-top: 30px;
+    }
+
+    .l-right-1{
+        margin-bottom: 30px;
+    }
+}
+
+.l-button{
+    background-color:#dadada !important;
+    border-color: #dadada !important;
+    color:#88888f;
+}
+
+.l-button:hover{
+    color:#fff;
+    background: linear-gradient(90deg,#5774aa,#6379F4);
+    transition: 2s;
+}
+
+.l-sign-up{
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    font-family: nunito-sans;
+}
+
+.forgot-password{
+    float:right !important;
+    margin-bottom: 30px;
+}

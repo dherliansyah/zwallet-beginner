@@ -16,9 +16,12 @@ import { LandingPage } from "./LandingPage";
 import { Login } from "./Login";
 import { PrivateRoute } from "./Compo";
 import { PublicRoute } from "./Compo";
+import { Provider } from "react-redux";
+import  configureStore  from "../src/redux/store";
+import  {PersistGate}  from "redux-persist/integration/react";
 
-function App() {
-  return (
+const Routes = () => {
+  return(
     <Router>
       <Switch>
         <PrivateRoute component={Search} path="/search" />
@@ -37,6 +40,18 @@ function App() {
         <PublicRoute component={LandingPage} restricted={false} path="/" />
       </Switch>
     </Router>
+  )
+}
+
+
+const App = () => {
+  const { store, persistor } = configureStore()
+  return (
+    <Provider store={store}>
+       <PersistGate loading={null} persistor={persistor}>
+         <Routes />
+       </PersistGate>
+    </Provider>
   );
 }
 
