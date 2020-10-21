@@ -14,13 +14,14 @@ import { ManagePhone } from "./ManagePhone";
 import { Success } from "./Success";
 import { LandingPage } from "./LandingPage";
 import { Login } from "./Login";
+import { AdmHome } from "./AdmHome";
 import { PrivateRoute } from "./Compo";
 import { PublicRoute } from "./Compo";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import  configureStore  from "../src/redux/store";
 import  {PersistGate}  from "redux-persist/integration/react";
 
-const Routes = () => {
+const RoutesPublic = () => {
   return(
     <Router>
       <Switch>
@@ -37,11 +38,37 @@ const Routes = () => {
         <PrivateRoute component={ManagePhone} path="/manage_phone" />
         <PrivateRoute component={Success} path="/success" />
         <PublicRoute component={Login} restricted={true} path="/login" />
-        <PublicRoute component={LandingPage} restricted={false} path="/" />
+        <PublicRoute component={LandingPage} restricted={false} path="/" exact />
       </Switch>
     </Router>
   )
 }
+
+const RoutesAdmin = () => {
+  return (
+    <>
+      <>
+        <PrivateRoute exact path="/ngademin" component={AdmHome} />
+      </>
+    </>
+  );
+}
+
+const Routes = () => {
+  const Auth = useSelector((s) => s.Auth);
+  return (
+    <Router>
+      {Auth?.data?.user?.role === "admin" ? (<>
+        <RoutesAdmin />
+        <RoutesPublic />
+      </>) : (
+        <>
+          <RoutesPublic />
+        </>
+      )}
+    </Router>
+  );
+};
 
 
 const App = () => {

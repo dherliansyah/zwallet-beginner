@@ -3,20 +3,22 @@ import { Row, Form, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Searchstyle.css";
 import john from "./asset/john.png";
-import Axios from "axios";
 import { Navbar } from "../Component";
 import { Footer } from "../Component";
 import { Header } from "../Component";
+import { useDispatch, useSelector } from "react-redux";
+import { SearchUser } from "../redux/actions/Search";
 
 const Content = (props) => {
-  const [user, setUser] = React.useState("");
+  const dispatch = useDispatch();
+  const {data} = useSelector((s) => s.Search);
+  const Auth = useSelector((s) => s.Auth);
+
   React.useEffect(() => {
-    Axios({
-      method: "get",
-      url: "http://localhost:8000/api/v1/user?page=1&limit=4",
-    })
-      .then((res) => setUser(res.data.data))
-      .catch((err) => console.log(err.message));
+    dispatch(SearchUser({
+      token : Auth.data.token
+    }))
+     
   }, []);
   return (
     <>
@@ -36,8 +38,7 @@ const Content = (props) => {
               />
             </Form.Group>
           </Form>
-          {user &&
-            user.map((item) => {
+          {data.map((item) => {
               return (
                 <div className="h-tran-data-search">
                   <img
@@ -47,10 +48,10 @@ const Content = (props) => {
                   />
                   <Link className="h-name-data-href" to="/amount">
                     <p className="h-name-data-search">
-                      {item.firstName} {item.lastName}{" "}
+                      {item.firstName} {item.lastName}
                     </p>
                   </Link>
-                  <p className="h-status-data-search">{`+62 ${item.phone}`}</p>
+                  <p className="h-status-data-search">+62 {item.phone}</p>
                 </div>
               );
             })}

@@ -1,21 +1,23 @@
 import React from "react";
 import { Row, ListGroup, Col } from "react-bootstrap";
 import "./Topupstyle.css";
-import Axios from "axios";
 import { Navbar } from "../Component";
 import { Footer } from "../Component";
 import { Header } from "../Component";
+import { useDispatch, useSelector } from "react-redux";
+import { TopupUser } from "../redux/actions/Topup";
 
 const Content = (props) => {
-  const [topup, setTopup] = React.useState("");
+
+  const dispatch = useDispatch();
+  const {data} = useSelector((s) => s.Topup)
+  const Auth = useSelector((s) => s.Auth)
+
   React.useEffect(() => {
-    Axios({
-      method: "get",
-      url: "https://zwallet-apii.herokuapp.com/topup",
-    })
-      .then((res) => setTopup(res.data.data))
-      .catch((err) => console.log(err.message));
-  }, []);
+    dispatch(TopupUser({
+      token : Auth.data.token
+    }))
+  },[]);
 
   return (
     <>
@@ -26,17 +28,17 @@ const Content = (props) => {
               <p className="s-parap-search">How To Top Up</p>
             </div>
           </Row>
-          {topup &&
-            topup.map((item, index) => {
+          {data.map((item, index) => {
               return (
                 <ListGroup className="des-topup-top">
                   <ListGroup.Item className="des-topup">
-                    <span className="num-topup"> {index + 1}</span>
+                    <span className="num-topup">{index + 1} </span>
                     {item.description}
+                    
                   </ListGroup.Item>
                 </ListGroup>
               );
-            })}
+             })}
         </div>
       </Col>
     </>

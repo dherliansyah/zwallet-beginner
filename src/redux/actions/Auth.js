@@ -30,7 +30,7 @@ export const AuthLogin = (fields) => {
       url: "http://localhost:8000/api/v1/auth/login",
     })
       .then((res) => {
-        const data = res.data;
+        const data = res.data.data;
         dispatch(AuthLoginSuccess(data));
         // fields.replace('/home')
       })
