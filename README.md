@@ -10,6 +10,11 @@
 <p>Functional Class  : Tidak bisa menggunakan component state (hanya menerima props) </p>
 <p>Component Class   : Dapat menggunakan state<p/>
 
+## SOAL TEORI WEEK 7
+
+<p> Redux : Library untuk mengelols state untuk mempermudah pertukaran informasi dari beberapa komponent di beberapa tempat, karena semua state dikelola di redux store </p>
+<p> Hoc : cara untuk bikin komponen reactjs baru dari komponen yang sudah ada
+
 ### # TENTANG
 
 Halo, Saya <b>Diki Herliansyah</b>, saya murid dari <b>Arkademy</b> program <b>Fullstack Mobile Batch 18</b><br>
