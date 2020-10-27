@@ -5,8 +5,25 @@ import "./Personalstyle.css";
 import { Navbar } from "../Component";
 import { Footer } from "../Component";
 import { Header } from "../Component";
+import { useDispatch, useSelector } from "react-redux";
+import { GetUsers } from "../redux/actions/Users";
+
 
 const Content = (props) => {
+
+  const dispatch = useDispatch();
+
+  const {data} = useSelector((s) => s.Users);
+  const Auth = useSelector((s) => s.Auth)
+
+  React.useEffect(() =>{
+    dispatch(GetUsers({
+      idUser : Auth.data.Users,
+      Auth : Auth.data.token
+    }))
+  },[])
+
+
   return (
     <>
       <Col lg={9} md={12} xs={12}>
@@ -22,25 +39,25 @@ const Content = (props) => {
               <ListGroup className="des-personal">
                 <ListGroup.Item className="description">
                   <p className="data-personal-top"> First Name</p>
-                  <p className="data-personal">Robert</p>
+                  <p className="data-personal">{data.firstName}</p>
                 </ListGroup.Item>
               </ListGroup>
               <ListGroup className="des-personal">
                 <ListGroup.Item className="description">
                   <p className="data-personal-top"> Last Name</p>
-                  <p className="data-personal">Chandler</p>
+                  <p className="data-personal">{data.lastName}</p>
                 </ListGroup.Item>
               </ListGroup>
               <ListGroup className="des-personal">
                 <ListGroup.Item className="description">
                   <p className="data-personal-top"> Verified E-mail</p>
-                  <p className="data-personal">dikiherliansyahh@gmail.com</p>
+                  <p className="data-personal">{data.email}</p>
                 </ListGroup.Item>
               </ListGroup>
               <ListGroup className="des-personal">
                 <ListGroup.Item className="description">
                   <p className="data-personal-top"> Phone Number</p>
-                  <p className="data-personal">+62 813-9387-7946</p>
+                  <p className="data-personal">+62 {data.phone}</p>
                   <Link className="text-manage" to="/manage_phone">
                     <p className="">Manage</p>
                   </Link>

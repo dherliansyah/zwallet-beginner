@@ -19,7 +19,7 @@ const Login = (props) => {
       AuthLogin({
         email: email,
         password: password,
-        history: props.history,
+        // history: props.history,
       })
     );
   };

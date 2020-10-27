@@ -13,8 +13,22 @@ import audesk from "./asset/audesk.png";
 import { Navbar } from "../Component";
 import { Footer } from "../Component";
 import { Header } from "../Component";
+import { useDispatch, useSelector } from "react-redux";
+import { GetUsers } from "../redux/actions/Users";
 
 const Content = (props) => {
+  const dispatch = useDispatch();
+
+  const {data} = useSelector((s) => s.Users)
+  const Auth = useSelector((s) => s.Auth) 
+
+  React.useEffect(() =>{
+    dispatch(GetUsers({
+      idUser: Auth.data.idUser, 
+      token: Auth.data.token
+
+    }))
+  },[])
   return (
     <>
       <Col lg={9} md={12} xs={12}>
@@ -24,8 +38,8 @@ const Content = (props) => {
               <div>
                 <div className=" aa">
                   <p className="balance-top">Balance</p>
-                  <h3 className="money-top">Rp. 120.000</h3>
-                  <p className="phone-top">+62 813-9387-7946</p>
+                  <h3 className="money-top">Rp. {data.balance}</h3>
+                  <p className="phone-top">+62 {data.phone}</p>
                 </div>
               </div>
             </Col>

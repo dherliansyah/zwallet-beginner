@@ -13,7 +13,7 @@ const Header = (props) => {
   const Auth = useSelector((s) => s.Auth) 
 
   React.useEffect(() => {
-    console.log(data)
+    // console.log(data)
     dispatch(GetUsers({
       idUser: Auth.data.idUser, 
       token: Auth.data.token
@@ -31,7 +31,7 @@ const Header = (props) => {
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Image className="logo" src={Rectangle25} rounded />
+            <Image className="logo" src={data.photo ? data.photo : Rectangle25} rounded />
             <Navbar.Text className="text-header">
               <p className="parap-header">
               {

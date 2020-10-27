@@ -6,8 +6,23 @@ import profil from "./asset/Rectangle25.png";
 import { Navbar } from "../Component";
 import { Footer } from "../Component";
 import { Header } from "../Component";
+import { useDispatch, useSelector } from "react-redux";
+import { GetUsers } from "../redux/actions/Users";
 
 const Content = (props) => {
+  
+  const dispatch = useDispatch();
+
+  const {data} = useSelector((s) => s.Users);
+  const Auth = useSelector((s) => s.Auth)
+
+  React.useEffect(() =>{
+    dispatch(GetUsers({
+      idUser : Auth.data.Users,
+      Auth : Auth.data.token
+    }))
+  },[])
+  
   return (
     <>
       <Col lg={9} md={12} xs={12}>
@@ -19,8 +34,8 @@ const Content = (props) => {
                 <p>Edit</p>
               </Link>
 
-              <p className="name-p">Robert Chandler</p>
-              <p className="phone-p">+62 813-9387-7946</p>
+              <p className="name-p"> {data.email} </p>
+              <p className="phone-p">+62 {data.phone} </p>
 
               <div className="personal-info">
                 <Link className="text-link" to="/personal_info">
